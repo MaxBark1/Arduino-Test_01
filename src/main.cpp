@@ -12,7 +12,7 @@ void loop()
 {
 digitalWrite(LED_BUILTIN, HIGH);
 i++;
-delay(300);
+delay(500);
 digitalWrite(LED_BUILTIN, LOW);
-delay(100);
+delay(500);
 }
