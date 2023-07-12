@@ -2,7 +2,7 @@
 #include <Arduino.h>
 #include "avr8-stub.h"
 #include <dht_nonblocking.h>
-#dbarkin added the comment
+#dbarkin added the comment for new branch
 #
 #define DHT_SENSOR_TYPE DHT_TYPE_11
 //#define DHT_SENSOR_TYPE DHT_TYPE_21
