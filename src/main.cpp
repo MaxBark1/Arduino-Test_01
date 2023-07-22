@@ -15,6 +15,15 @@ void setup( )
 {
   debug_init();
 }
+
+void mymessage (String mymessage) {
+  char message[1];
+  //message=mymessage.c_str();
+  breakpoint();
+  strcpy(message, mymessage.c_str());
+  debug_message(message);
+}
+
 void loop( )
 {
   float temperature;
@@ -28,7 +37,8 @@ void loop( )
     myMessage += humidity;
     myMessage += "%\n";
     breakpoint();
-    debug_message(myMessage.c_str());
+    //debug_message(myMessage.c_str());
+    mymessage(myMessage);
   }
 }
 
