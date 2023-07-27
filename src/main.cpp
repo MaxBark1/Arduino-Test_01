@@ -15,6 +15,11 @@ void setup( )
 {
   debug_init();
 }
+
+void mymessage (String mymessage) {
+  debug_message(mymessage.c_str());
+}
+
 void loop( )
 {
   float temperature;
@@ -28,7 +33,8 @@ void loop( )
     myMessage += humidity;
     myMessage += "%\n";
     breakpoint();
-    debug_message(myMessage.c_str());
+    //debug_message(myMessage.c_str());
+    mymessage(myMessage);
   }
 }
 
