@@ -17,11 +17,7 @@ void setup( )
 }
 
 void mymessage (String mymessage) {
-  char message[1];
-  //message=mymessage.c_str();
-  breakpoint();
-  strcpy(message, mymessage.c_str());
-  debug_message(message);
+  debug_message(mymessage.c_str());
 }
 
 void loop( )
